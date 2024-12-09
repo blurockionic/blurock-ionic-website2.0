@@ -12,7 +12,7 @@ import card24 from '@/app/assets/card24.png'
 import card25 from '@/app/assets/card25.png'
 import card26 from '@/app/assets/card26.png'
 import Logo from '@/app/assets/BlurockLogo.png'
-import { AccordianFAQ } from '@/app/components/Home/faq';
+import { FAQs } from '@/app/components/Home/faq';
 
 const Home = () => {
   return (
@@ -78,7 +78,7 @@ const Home = () => {
             </div>
           </div>
 
-          <h1 className='font-bold mt-[97px] text-2xl mb-[14px]'>End-to-End Automation Solutions</h1>
+          <h1 className='font-bold my-[97px] text-2xl mb-[14px]'>End-to-End Automation Solutions</h1>
           <p className='text-[16px] mt-[24px]'>All-in-one solutions to build software, reach customers, save time, and <br /> boost sales.</p>
           
         </div>
@@ -86,8 +86,11 @@ const Home = () => {
 
       {/* --------------------------------------------- FAQ section --------------------------------------------------- */}
 
-      <div className='mt-[97px]'>
-        <AccordianFAQ/>
+     
+      <div className='mt-[97px] w-full flex flex-col justify-center items-center px-[120px]'>
+        <h1 className='font-bold mx-[97px] text-2xl mb-[14px]'>End-to-End Automation Solutions</h1>
+        <p className='text-[16px] mt-[24px]'>All-in-one solutions to build software, reach customers, save time, and <br /> boost sales.</p>
+        <FAQs/>
       </div>
 
 

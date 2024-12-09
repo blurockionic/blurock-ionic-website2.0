@@ -1,66 +1,33 @@
-"use client"
-import React from "react";
 import {
   Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 
-interface IconProps {
-  id: number;
-  open: number;
-}
-
-function Icon({ id, open }: IconProps) {
+export function FAQs() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-  );
-}
-
-export function AccordianFAQ() {
-  const [open, setOpen] = React.useState<number>(0);
-
-  const handleOpen = (value: number) => setOpen(open === value ? 0 : value);
-
-  return (
-    <>
-      <Accordion open={open === 1} icon={<Icon id={1} open={open} />} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <AccordionHeader onClick={() => handleOpen(1)} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>What is Material Tailwind?</AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 2} icon={<Icon id={2} open={open} />} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <AccordionHeader onClick={() => handleOpen(2)}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          How to use Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 3} icon={<Icon id={3} open={open} />}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-        <AccordionHeader onClick={() => handleOpen(3)}  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-          What can I do with Material Tailwind?
-        </AccordionHeader>
-        <AccordionBody>
-          We&apos;re not always in the position that we want to be at. We&apos;re constantly
-          growing. We&apos;re constantly making mistakes. We&apos;re constantly trying to express
-          ourselves and actualize our dreams.
-        </AccordionBody>
-      </Accordion>
-    </>
-  );
+    <Accordion type="single" collapsible className="w-full">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It adheres to the WAI-ARIA design pattern.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger>Is it styled?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It comes with default styles that matches the other
+          components&apos; aesthetic.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger>Is it animated?</AccordionTrigger>
+        <AccordionContent>
+          Yes. It&apos;s animated by default, but you can disable it if you
+          prefer.
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
 }
