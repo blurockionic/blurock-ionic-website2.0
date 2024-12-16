@@ -6,6 +6,7 @@ import mini2 from '../aboutus/assets/mini2.png'
 import mini3 from '../aboutus/assets/mini3.png'
 import PlaceHolder1 from '../aboutus/assets/placeholder526520.png'
 import Avatar from '../aboutus/assets/avatar.png'
+import CardEmp from '@/app/components/About/CardEmp'
 
 const AboutUs = () => {
   return (
@@ -60,19 +61,42 @@ const AboutUs = () => {
 
       <div className='flex items-center text-center flex-col justify-between w-full px-[230px] py-[72px]'>
         <div>
-          <div className='flex gap-[33px] text-center p-[24px] rounded-md shadow-inner'>
+
+          <div className='flex gap-[33px] text-center p-[12px] rounded-md shadow-inner'>
+            <Image src={Avatar} height={48} width={48} alt='avatar'/>
+            <h1 className='text-2xl font-semibold text-center leading-[3rem]'>9+ Team Members</h1>
+          </div>
+
+        </div>
+
+        <div className='flex mt-[54px] gap-[54px]'>
+
+          <div className='flex gap-[33px] text-center p-[12px] rounded-md shadow-inner'>
+            <Image src={Avatar} height={48} width={48} alt='avatar'/>
+            <h1 className='text-2xl font-semibold text-center leading-[3rem]'>9+ Team Members</h1>
+          </div>
+
+          <div className='flex gap-[33px] text-center p-[12px] rounded-md shadow-inner'>
             <Image src={Avatar} height={48} width={48} alt='avatar'/>
             <h1 className='text-2xl font-semibold text-center leading-[3rem]'>9+ Team Members</h1>
           </div>
         </div>
-        <div className='flex mt-[54px] gap-[54px]'>
-          <div className='flex gap-[33px] text-center p-[24px] rounded-md shadow-inner'>
-            <Image src={Avatar} height={48} width={48} alt='avatar'/>
-            <h1 className='text-2xl font-semibold text-center leading-[3rem]'>9+ Team Members</h1>
-          </div><div className='flex gap-[33px] text-center p-[24px] rounded-md shadow-inner'>
-            <Image src={Avatar} height={48} width={48} alt='avatar'/>
-            <h1 className='text-2xl font-semibold text-center leading-[3rem]'>9+ Team Members</h1>
-          </div>
+      </div>
+
+      {/* ------------------------------ Our Team --------------------------------------------- */}
+
+      <div className='w-full p-[64px] flex flex-col justify-center items-center text-center mb-[80px]'>
+        <div className='flex flex-col justify-center items-center text-center gap-[24px]'>
+          <p className='font-bold text-md'>Meet</p>
+          <h1 className='text-3xl font-bold text-[#5550ff]'>Our Team</h1>
+          <p className='text-md'>Dedicated proffessionals committed to excellence</p>
+        </div>
+
+        <div className='flex gap-[32px]'>
+          <CardEmp/>
+          <CardEmp/>
+          <CardEmp/>
+          <CardEmp/>
         </div>
       </div>
 
