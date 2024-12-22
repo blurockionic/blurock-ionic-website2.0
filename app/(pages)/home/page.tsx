@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import React from 'react'
 import Homeimg from './assets/mainbodyimage.png'
@@ -92,8 +93,6 @@ const Home = () => {
         <p className='text-[16px] mt-[24px]'>All-in-one solutions to build software, reach customers, save time, and <br /> boost sales.</p>
         <FAQs/>
       </div>
-
-
     </div>
   )
 }

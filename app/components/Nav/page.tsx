@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from "../../assets/BlurockLogo.png"
 import Arrow from "../../assets/arrow.png"
 import Image from 'next/image';
-import Link from 'next/link';
+
 // import { Lato } from 'next/font/google'
 
 
@@ -16,6 +16,7 @@ const Navbar = () => {
       </div>
 
       <ul className='gap-[14px] py-[11px] flex font-bold'>
+
         <li>
           <Link href="/home">Home</Link>
         </li>
@@ -34,6 +35,7 @@ const Navbar = () => {
         <li>
           <Link href="/contactus">Contact Us</Link>
         </li>
+
       </ul>
 
       <div className='flex gap-2'>
