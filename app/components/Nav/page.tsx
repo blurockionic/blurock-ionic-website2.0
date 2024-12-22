@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from "../../assets/BlurockLogo.png"
 import Arrow from "../../assets/arrow.png"
 import Image from 'next/image';
+import Link from 'next/link';
 
 // import { Lato } from 'next/font/google'
 
