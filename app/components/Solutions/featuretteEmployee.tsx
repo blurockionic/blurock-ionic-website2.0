@@ -29,7 +29,7 @@ const FeaturetteEmployee: React.FC = () => {
 
           {/* Header */}
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold font-montserrat leading-tight">
-            Unlock Your Team's Potential with Our <br />
+            Unlock Your Team&apos;s Potential with Our <br />
             <span className="text-[#5550ff]">Employee Management System</span>
           </h2>
 
