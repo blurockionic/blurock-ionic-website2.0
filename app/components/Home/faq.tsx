@@ -10,7 +10,7 @@ export function FAQs() {
     <div className='mt-20 w-full flex flex-col justify-center items-center px-4'>
     <h1 className='font-bold mx-[97px] text-2xl mb-[14px]'>Frequently Asked Questions</h1>
     <p className='text-md mt-[24px] text-start'>
-      Have questions about our services, solutions, or how Blurock Ionic can help your business? We've got you covered.
+      Have questions about our services, solutions, or how Blurock Ionic can help your business? We&apos;ve got you covered.
     </p>
   
     <Accordion type="single" collapsible className="w-full mt-6 max-w-3xl">
@@ -31,7 +31,7 @@ export function FAQs() {
       <AccordionItem value="item-3">
         <AccordionTrigger>What is marriagevendor.com?</AccordionTrigger>
         <AccordionContent>
-          It's one of our in-house platforms that connects users with top-rated wedding vendors, making event planning easy and efficient.
+          It&apos;s one of our in-house platforms that connects users with top-rated wedding vendors, making event planning easy and efficient.
         </AccordionContent>
       </AccordionItem>
   

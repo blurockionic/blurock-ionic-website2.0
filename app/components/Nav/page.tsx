@@ -9,13 +9,15 @@ import { Menu, X } from 'lucide-react'; // Hamburger and Close icons
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
 
   const handleOutsideClick = (event: MouseEvent) => {
-    if (menuRef.current && !(menuRef.current as any).contains(event.target)) {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
       setMenuOpen(false);
     }
   };
+  
 
   useEffect(() => {
     if (menuOpen) {
