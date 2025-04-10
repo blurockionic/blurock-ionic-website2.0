@@ -35,7 +35,7 @@ const FeaturetteEmployee: React.FC = () => {
 
           {/* Description */}
           <p className="text-lg font-roboto text-gray-700">
-          Our Order Management System simplifies the entire order process, ensuring accuracy and efficiency. Experience seamless integration with existing platforms for a hassle-free workflow.
+            Our Order Management System simplifies the entire order process, ensuring accuracy and efficiency. Experience seamless integration with existing platforms for a hassle-free workflow.
           </p>
 
           {/* Features */}

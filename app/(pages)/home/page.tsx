@@ -1,7 +1,7 @@
 
 import Image from 'next/image';
 import React from 'react'
-import Homeimg from './assets/mainbodyimage.png'
+import Homeimg from '../home/assets/mainbodyimage.png'
 import HomeCard from '@/app/components/Home/homeCard';
 import HomeCard2 from '@/app/components/Home/homeCard2';
 import card1icon from '@/app/assets/producthomeCard.png';
@@ -18,9 +18,9 @@ import { FAQs } from '@/app/components/Home/faq';
 const Home = () => {
   return (
     <div className='text-center  flex flex-col items-center justify-center'>
-      <div className="mt-[164px] p-2.5 justify-center items-center gap-2.5 inline-flex">
-        <div className="w-[1020px] text-center text-black text-[56px] font-bold leading-[72px]">Comprehensive Software Solutions for Tomorrow’s Enterprises</div>
-      </div>
+     <div className="mt-32 p-2.5 justify-center items-center gap-2.5 inline-flex w-full">
+      <h1 className="w-full text-center text-black text-[5vw] font-bold ">Comprehensive Software Solutions for Tomorrow’s Enterprises</h1>
+    </div>
 
       {/* <div className='mt-[82px] border-2 rounded-lg w-fit text-left p-[8px] flex-col items-center'>
         <p className='font-bold mb-[19px] text-[20px]'>Our Offerings</p>
